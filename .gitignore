@@ -1,0 +1,4 @@
+out/
+deployments/data/
+*prod.json
+.aider*

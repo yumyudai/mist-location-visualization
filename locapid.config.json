@@ -1,0 +1,22 @@
+{
+    "mist": {
+        "endpoint": "api.mist.com",
+        "apikey": "apikeychangemechangeme",
+        "location_timeout": 60,
+        "refresh_time": 1800,
+	"secret": "webhookkey"
+    },
+    "db": {
+        "driver": "mysql",
+        "mysql": {
+            "user": "mist",
+            "password": "changeme",
+            "host": "mariadb:3306",
+            "database": "mistlocation"
+        }
+    },
+    "http": {
+        "server_name": "mist-location-demo-apid",
+        "listen": "0.0.0.0:18080"
+    }
+}

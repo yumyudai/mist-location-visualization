@@ -1,0 +1,28 @@
+{
+    "mist": {
+        "endpoint": "api.mist.com",
+        "apikey": "apikeychangemechangeme",
+        "debug": true
+    },
+    "db": {
+        "driver": "mysql",
+        "mysql": {
+            "user": "mist",
+            "password": "changeme",
+            "host": "mariadb:3306",
+            "database": "mistlocation"
+        }
+    },
+    "datasource": [
+        {
+            "uri": "/api/v1/sites/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/maps",
+            "data_layout": "maps",
+            "interval": 60
+        },
+        {
+            "uri": "/api/v1/sites/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/zones",
+            "data_layout": "zones",
+            "interval": 60
+        }
+    ] 
+}

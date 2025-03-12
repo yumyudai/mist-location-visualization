@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Juniper Mist - Location Demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Juniper Mist location visualization demo">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/leaflet.css"/>
+    <link rel="stylesheet" href="./css/location_demo.css">
+
+    <!-- External libraries -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet.marker.slideto@0.2.0/Leaflet.Marker.SlideTo.js"></script>
+    
+    <!-- Application script -->
+    <script src="./js/location_demo.js"></script>
+</head>
+<body>
+    <!-- Map container -->
+    <div id="map"></div>
+    
+    <!-- Search container -->
+    <div id="searchContainer" style="position: fixed;"></div>
+    
+    <!-- Initialize application -->
+    <script>
+        $(document).ready(function() {
+            loadMap();
+            $("#searchContainer").LoadSearchBox();
+        });
+    </script>
+</body>
+</html>
